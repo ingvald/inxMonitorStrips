@@ -1,5 +1,5 @@
 inxMonitorStrips
 ==============
 
-show latest image from a pinterest feed (at first)
+show latest image from a pinterest (at first) feed
 
