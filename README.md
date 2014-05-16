@@ -1,5 +1,5 @@
-inxPintMonitor
+inxMonitorStrips
 ==============
 
-show latest image from a pinterest feed
-...
+show latest image from a pinterest feed (at first)
+
