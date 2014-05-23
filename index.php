@@ -1,5 +1,14 @@
 <?php
-#error_reporting(E_ALL);
-#ini_set("display_errors", 1);
-?>
-hello world
+
+?><html>
+    <head>
+      <title>
+monitor strips
+      </title>
+    </head>
+  <body>
+
+
+
+  </body>
+</html>
