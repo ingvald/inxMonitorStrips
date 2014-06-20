@@ -1,4 +1,6 @@
 <?php
+  //needs feed php utility
+  require_once('SimplePie.compiled.php');
 
 ?><html>
     <head>
@@ -9,6 +11,7 @@ monitor strips
   <body>
 
 
+TBD
 
   </body>
 </html>
