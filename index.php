@@ -16,9 +16,15 @@ TBD...
 <?php
 
 $feed = getInitiatedSimplePieFeed();
+//print_r($feed);
+foreach ($feed->get_items() as $item){
+  $feeditem = $item->get_description();
+  
+  print_r($feeditem);
 
+}
 /*
-* init simplepie feed with function
+* x init simplepie feed with function
 * loop through only first, or find simple alternative
 * strip down to html with img url
 * adjust size

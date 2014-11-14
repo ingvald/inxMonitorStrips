@@ -13,6 +13,13 @@ class basictest extends PHPUnit_Framework_TestCase {
     $this->assertEquals(true, function_exists("getInitiatedSimplePieFeed"));
   }
   
+  public function testGettingFeedContent(){
+    include_once("lib.php");
+    $feed = getInitiatedSimplePieFeed();
+    $this->assertNotEmpty($feed);
+    $this->assertTrue(strpos($feed, "www.pinterest") !== 0);
+  }
+  
 }
 
 function get_include_contents($filename) {
