@@ -11,7 +11,7 @@ monitor strips
   <body>
 
 
-TBD
+TBD...
 
 <?php
 
