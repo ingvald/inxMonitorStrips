@@ -17,12 +17,10 @@ TBD...
 
 $feed = getInitiatedSimplePieFeed();
 //print_r($feed);
-foreach ($feed->get_items() as $item){
-  $feeditem = $item->get_description();
-  
-  print_r($feeditem);
+$firstFeedItem = getFirstFeedItem();
+print_r($firstFeedItem);
 
-}
+
 /*
 * x init simplepie feed with function
 * loop through only first, or find simple alternative

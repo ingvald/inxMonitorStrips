@@ -20,6 +20,22 @@ class basictest extends PHPUnit_Framework_TestCase {
     $this->assertTrue(strpos($feed, "www.pinterest") !== 0);
   }
   
+  public function testGetFirstFeedItem(){
+    include_once("lib.php");
+    $feed = getInitiatedSimplePieFeed();
+    $firstFeedItem = getFirstFeedItem($feed);
+    //assumption: one feed item less than 300 in length...
+    $this->assertTrue(strlen($firstFeedItem) < 300);
+  }
+  
+/*
+  public function testStripDownToImage(){
+    include_once("lib.php");
+    $feed = getInitiatedSimplePieFeed();
+    $strippedFeed = getStrippedFeed();
+    //stripped = not having "href" ?
+  }
+*/
 }
 
 function get_include_contents($filename) {

@@ -22,5 +22,13 @@ function getInitiatedSimplePieFeed(){
   return $feed;
 }
 
+function getFirstFeedItem($feed){
+  $firstItem = "";
+  foreach ($feed->get_items() as $item){
+    $firstItem = $item->get_description();
+    break;
+  }
+  return $firstItem;
+}
 
 ?>
