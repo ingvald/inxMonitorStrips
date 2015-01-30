@@ -17,7 +17,7 @@ TBD...
 
 $feed = getInitiatedSimplePieFeed();
 //print_r($feed);
-$firstFeedItem = getFirstFeedItem();
+$firstFeedItem = getFirstFeedItem($feed);
 print_r($firstFeedItem);
 
 
