@@ -32,7 +32,11 @@ function getFirstFeedItem($feed){
 }
 
 function getImageFromFeedItem($feedItem){
-  return $feedItem; //TODO dummy
+  //start from > stop at </a
+  $start = strpos($feedItem, "src=");
+  $end = strpos($feedItem, "></a");
+  $strip = substr($feedItem, $start +5, $end - $start -6);
+  return "$strip"; 
 }
 
 ?>

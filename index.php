@@ -18,7 +18,8 @@ TBD...
 $feed = getInitiatedSimplePieFeed();
 //print_r($feed);
 $firstFeedItem = getFirstFeedItem($feed);
-print_r($firstFeedItem);
+$image = getImageFromFeedItem($firstFeedItem);
+print_r($image);
 
 
 /*
