@@ -10,25 +10,15 @@ monitor strips
     </head>
   <body>
 
-
-TBD...
-
 <?php
 
 $feed = getInitiatedSimplePieFeed();
 //print_r($feed);
 $firstFeedItem = getFirstFeedItem($feed);
 $image = getImageFromFeedItem($firstFeedItem);
-print_r($image);
+$strip = getBiggerImage($image);
+echo "<img width=100% src=\"" . $strip . "\">";
 
-
-/*
-* x init simplepie feed with function
-* loop through only first, or find simple alternative
-* strip down to html with img url
-* adjust size
-* get/ show img directly using url
-*/
 ?>
 
   </body>

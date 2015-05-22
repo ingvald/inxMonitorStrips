@@ -35,8 +35,17 @@ function getImageFromFeedItem($feedItem){
   //start from > stop at </a
   $start = strpos($feedItem, "src=");
   $end = strpos($feedItem, "></a");
-  $strip = substr($feedItem, $start +5, $end - $start -6);
-  return "$strip"; 
+  $image = substr($feedItem, $start +5, $end - $start -6);
+  return $image; 
+}
+
+//this is guessing, pinterest might change it over time...
+function getBiggerImage($feedImage){
+  //replace /196x/ with 736x (or bigger? find which bigger... pinterest supports) - "originals"
+  $pixel = strpos($feedImage, "236x");
+  //$strip = substr_replace($strip, "originals", $pixel, 4); //originals have started being different image types...
+  $strip = substr_replace($feedImage, "736x", $pixel, 4);
+  return $strip;
 }
 
 ?>
