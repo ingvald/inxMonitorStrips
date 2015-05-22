@@ -1,7 +1,7 @@
 inxMonitorStrips
 ==============
 
-show latest image from a pinterest (at first) feed
+show latest image from a pinterest feed
 
-live monitor from PoC (many Norwegian stripes): http://skaug.no/ingvald/monitor/
+live monitor, many Norwegian stripes: http://skaug.no/ingvald/monitor/
 fetching from http://www.pinterest.com/skaug/strips/
