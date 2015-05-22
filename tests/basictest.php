@@ -17,7 +17,7 @@ class basictest extends PHPUnit_Framework_TestCase {
     include_once("lib.php");
     $feed = getInitiatedSimplePieFeed();
     $this->assertNotEmpty($feed);
-    $this->assertTrue(strpos($feed, "www.pinterest") !== 0);
+    $this->assertTrue(stringContainsString($feed, "www.pinterest"));
   }
   
   public function testGetFirstFeedItem(){
@@ -35,7 +35,14 @@ class basictest extends PHPUnit_Framework_TestCase {
     $strippedFeed = getStrippedFeed();
     //stripped = not having "href" ?
   }
-*/
+
+}
+
+function stringContainsString($haystack, $needle){
+  $haystackTxt = serialize($haystack);
+  $needleInHaystack = stripos($haystackTxt, $needle);
+  if ($needleInHaystack === false) return false;
+  return true;
 }
 
 function get_include_contents($filename) {

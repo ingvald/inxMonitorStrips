@@ -31,4 +31,8 @@ function getFirstFeedItem($feed){
   return $firstItem;
 }
 
+function getImageFromFeedItem($feedItem){
+  return $feedItem; //TODO dummy
+}
+
 ?>
