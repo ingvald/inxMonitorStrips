@@ -28,12 +28,13 @@ class basictest extends PHPUnit_Framework_TestCase {
     $this->assertTrue(strlen($firstFeedItem) < 300);
   }
   
-/*
   public function testStripDownToImage(){
     include_once("lib.php");
     $feed = getInitiatedSimplePieFeed();
-    $strippedFeed = getStrippedFeed();
-    //stripped = not having "href" ?
+    $firstFeedItem = getFirstFeedItem($feed);
+    $img = getImageFromFeedItem($firstFeedItem);
+    //assumption: stripped = not having "href" ?
+    $this->assertFalse(stringContainsString($img, "href"));
   }
 
 }
