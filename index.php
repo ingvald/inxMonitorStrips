@@ -12,12 +12,12 @@ monitor strips
 
 <?php
 
-$feed = getInitiatedSimplePieFeed();
+$feed = getInitiatedSimplePieFeed("http://www.pinterest.com/skaug/strips/rss");
 //print_r($feed);
 $firstFeedItem = getFirstFeedItem($feed);
 $image = getImageFromFeedItem($firstFeedItem);
 $strip = getBiggerImage($image);
-echo "<img width=100% src=\"" . $strip . "\">";
+echo "   <img width=100% src=\"" . $strip . "\">";
 
 ?>
 

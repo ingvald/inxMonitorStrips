@@ -4,12 +4,12 @@
 require_once('SimplePie.compiled.php');
 
 //comments from simplepie example
-function getInitiatedSimplePieFeed(){
+function getInitiatedSimplePieFeed($feedUrl){
   // We'll process this feed with all of the default options.
   $feed = new SimplePie();
  
   // Set which feed to process.
-  $feed->set_feed_url("http://www.pinterest.com/skaug/strips/rss");
+  $feed->set_feed_url($feedUrl);
 
   // Run SimplePie.
   $feed->init();
