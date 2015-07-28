@@ -12,7 +12,7 @@ monitor strips
 
 <?php
 
-$feed = getInitiatedSimplePieFeed("http://www.pinterest.com/skaug/strips/rss");
+$feed = getInitiatedSimplePieFeed("http://www.pinterest.com/skaug/strips.rss");
 //print_r($feed);
 $firstFeedItem = getFirstFeedItem($feed);
 $image = getImageFromFeedItem($firstFeedItem);
