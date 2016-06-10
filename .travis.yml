@@ -6,3 +6,4 @@ deploy:
   app: inxmonitorstrips
   on:
     repo: ingvald/inxMonitorStrips
+sudo: false
