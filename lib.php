@@ -3,6 +3,15 @@
 //needs feed php utility
 require_once('SimplePie.compiled.php');
 
+//get feed URL from file if exists, return default if not
+function getFeedUrl(){
+  $feedUrl = "http://www.pinterest.com/skaug/strips.rss"; //default feed url
+  $feedFileName = "feed-url";
+  if (file_exists($feedFileName))
+    $feedUrl = file_get_contents($feedFileName);
+  return $feedUrl;
+}
+
 //comments from simplepie example
 function getInitiatedSimplePieFeed($feedUrl){
   // We'll process this feed with all of the default options.
