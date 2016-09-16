@@ -3,7 +3,7 @@ deploy:
   provider: heroku
   api_key:
     secure: aea21b08e9d553df22411274e10869993b50d306
-  app: inxmonitorstrips
+  app: inx-strips
   on:
     repo: ingvald/inxMonitorStrips
 sudo: false
