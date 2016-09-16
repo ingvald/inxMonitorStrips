@@ -2,7 +2,7 @@ language: php
 deploy:
   provider: heroku
   api_key:
-    secure: MBDR0igQlyaoDvOYrDpvia6c2RqH/SDphA/oh2FVREnI0pJXxAMGLyvS9c1ZZZ4JafYWZyLcBsrUdapHFhGgIvA2zI1Pgkbh5uR4b0WH6/QrL1bV7M4W/fUNtN40kI4d+lvXNzrJQVv8uZ+AJHYqtCsBGkjT7Sa6+QxoNaGOfJ0=
+    secure: aea21b08e9d553df22411274e10869993b50d306
   app: inxmonitorstrips
   on:
     repo: ingvald/inxMonitorStrips
