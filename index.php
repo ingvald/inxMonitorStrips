@@ -18,7 +18,7 @@ $feed = getInitiatedSimplePieFeed($feedUrl);
 $firstFeedItem = getFirstFeedItem($feed);
 $image = getImageFromFeedItem($firstFeedItem);
 $strip = getBiggerImage($image);
-echo "   <img width=100% height=100% src=\"" . $strip . "\">";
+echo "   <img style='max-width: 100%; max-height: 100%' src=\"" . $strip . "\">";
 
 ?>
 
